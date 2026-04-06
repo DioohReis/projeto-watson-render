@@ -1,0 +1,113 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API de Consulta de Alunos FIAP",
+    "version": "1.0.0",
+    "description": "API de exemplo para consultar dados de alunos pelo RM e integrar com o IBM watsonx Assistant."
+  },
+  "servers": [
+    {
+      "url": "https://SEU-ENDERECO-DA-API.onrender.com",
+      "description": "Substitua pela URL pública da sua API no Render"
+    }
+  ],
+  "paths": {
+    "/alunos/{rm}": {
+      "get": {
+        "summary": "Consultar aluno por RM",
+        "operationId": "consultarAlunoPorRM",
+        "parameters": [
+          {
+            "name": "rm",
+            "in": "path",
+            "required": true,
+            "description": "Registro do aluno no formato RM123456",
+            "schema": {
+              "type": "string",
+              "pattern": "^RM\\d{6}$",
+              "example": "RM573301"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Aluno encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "encontrado": {
+                      "type": "boolean",
+                      "example": true
+                    },
+                    "rm": {
+                      "type": "string",
+                      "example": "RM573301"
+                    },
+                    "nome": {
+                      "type": "string",
+                      "example": "Diogo Guilherme de Assis Reis"
+                    },
+                    "curso": {
+                      "type": "string",
+                      "example": "Análise e Desenvolvimento de Sistemas"
+                    },
+                    "periodo": {
+                      "type": "string",
+                      "example": "Matutino"
+                    },
+                    "matriculado": {
+                      "type": "string",
+                      "example": "Sim"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Formato inválido",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "encontrado": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "mensagem": {
+                      "type": "string",
+                      "example": "Formato de RM inválido. Use RM seguido de 6 números."
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Aluno não encontrado",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "encontrado": {
+                      "type": "boolean",
+                      "example": false
+                    },
+                    "mensagem": {
+                      "type": "string",
+                      "example": "RM não cadastrado"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

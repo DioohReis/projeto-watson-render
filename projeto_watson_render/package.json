@@ -1,0 +1,12 @@
+{
+  "name": "api-alunos-fiap-watson",
+  "version": "1.0.0",
+  "description": "API para consulta de alunos por RM integrada ao IBM watsonx Assistant",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
