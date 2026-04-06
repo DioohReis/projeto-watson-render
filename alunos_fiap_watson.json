@@ -1,0 +1,72 @@
+[
+  {
+    "rm": "RM573301",
+    "nome": "Diogo Guilherme de Assis Reis",
+    "curso": "Análise e Desenvolvimento de Sistemas",
+    "periodo": "Matutino",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573302",
+    "nome": "Ana Clara Martins",
+    "curso": "Engenharia de Software",
+    "periodo": "Noturno",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573303",
+    "nome": "Lucas Henrique Souza",
+    "curso": "Ciência da Computação",
+    "periodo": "Matutino",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573304",
+    "nome": "Marina Alves Pereira",
+    "curso": "Sistemas de Informação",
+    "periodo": "Noturno",
+    "matriculado": "Não"
+  },
+  {
+    "rm": "RM573305",
+    "nome": "Rafael Costa Lima",
+    "curso": "Análise e Desenvolvimento de Sistemas",
+    "periodo": "Vespertino",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573306",
+    "nome": "Beatriz Fernandes Rocha",
+    "curso": "Banco de Dados",
+    "periodo": "Matutino",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573307",
+    "nome": "Gabriel Oliveira Santos",
+    "curso": "Defesa Cibernética",
+    "periodo": "Noturno",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573308",
+    "nome": "Juliana Mendes Castro",
+    "curso": "Engenharia da Computação",
+    "periodo": "Matutino",
+    "matriculado": "Não"
+  },
+  {
+    "rm": "RM573309",
+    "nome": "Pedro Henrique Nunes",
+    "curso": "Redes de Computadores",
+    "periodo": "Vespertino",
+    "matriculado": "Sim"
+  },
+  {
+    "rm": "RM573310",
+    "nome": "Larissa Gomes Ribeiro",
+    "curso": "Inteligência Artificial",
+    "periodo": "Noturno",
+    "matriculado": "Sim"
+  }
+]
