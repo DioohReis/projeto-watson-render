@@ -11,7 +11,7 @@
     "description": "URL pública da sua API no Render"
   }
 ]
-  ]
+  
   "paths": {
     "/alunos/{rm}": {
       "get": {
