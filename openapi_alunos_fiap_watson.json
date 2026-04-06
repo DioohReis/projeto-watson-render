@@ -5,13 +5,12 @@
     "version": "1.0.0",
     "description": "API de exemplo para consultar dados de alunos pelo RM e integrar com o IBM watsonx Assistant."
   },
-"servers": [
-  {
-   "url": "https://api-alunos-watson.onrender.com"
-    "description": "URL pública da sua API no Render"
-  }
-]
-  
+  "servers": [
+    {
+      "url": "https://api-alunos-watson.onrender.com",
+      "description": "URL pública da sua API no Render"
+    }
+  ],
   "paths": {
     "/alunos/{rm}": {
       "get": {
