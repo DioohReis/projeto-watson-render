@@ -7,7 +7,7 @@
   },
 "servers": [
   {
-    "url": "https://api-alunos-watson.onrender.com",
+   "url": "https://api-alunos-watson.onrender.com"
     "description": "URL pública da sua API no Render"
   }
 ]
